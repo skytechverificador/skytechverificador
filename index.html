@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>VERIFICAÇÃO DE CLIENTES - SKYTECH</title>
+
+	<link rel="icon" href="assets/img/cropped-favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" href="assets/img/cropped-favicon-192x192.png" sizes="192x192" />
+
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+
+</head>
+<body id="bg">
+
+	<img src="assets/img/logo-skytech.png">
+	<h1>VERIFICADOR DE CLIENTES</h1>
+
+	<p id="setor">SETOR RESPONSÁVEL - <span id="resultado"> NÃO VERIFICADO.</span></p>
+
+	<div  method="get" class="verificador">
+
+		<input id="cnpj" type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" name="CNPJ" placeholder="DIGITE O CNPJ DO CLIENTE" >
+
+		<button type="submit" value="VERIFICAR" id="verifica" onclick="validaCNPJ();">Verificar</button>
+
+	</div>
+
+	<script type="text/javascript" src="assets/script/script.js"></script> 
+
+</body>
+</html>
